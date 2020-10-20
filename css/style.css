@@ -9,6 +9,7 @@ body {
   max-width: 1602px;
   margin: 0 auto;
 }
+
 header {
   background: url(../img/iphone-card-header-2.png) center/cover;
   background-repeat: no-repeat;
@@ -95,9 +96,8 @@ header {
 /* main_section_two */
 .main_section_two {
   background-color: #e3e3e3;
-  display: flex;
-  /* justify-content: space-between; */
 }
+
 .main_features_two {
   display: flex;
   justify-content: space-between;
@@ -107,7 +107,6 @@ header {
 .main_features_two_box_text {
   margin-left: 50px;
   margin-top: 50px;
-  /* padding-right: 400px; */
   max-width: 545px;
   max-height: 265px;
 }
@@ -130,9 +129,8 @@ header {
 }
 
 /* main button */
-
 .main_features_submit_email {
-  margin: 0 auto;
+  padding-bottom: 20px;
 }
 
 .main_features_submit_conteiner {
@@ -167,20 +165,20 @@ header {
 }
 
 /* Video */
-
 .main_section_two_video {
   position: relative;
   padding-bottom: 36%;
   height: 0;
   overflow: hidden;
+  margin-right: 65px;
 }
+
 .main_section_two_video iframe {
   min-width: 500px;
   min-height: 307px;
   margin: auto;
   margin-top: 60px;
   border-radius: 8px;
-  margin-left: 150px;
 }
 
 /* Photo */
@@ -216,7 +214,9 @@ header {
 
 .main_features_box_photos {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  padding: 5px;
 }
 
 .main_features_photo {
@@ -228,6 +228,11 @@ header {
 
 .main_features_photo:hover {
   opacity: 0.4;
+}
+
+.main_features_photo img {
+  display: inline-block;
+  align-items: center;
 }
 
 .main_features_icons {
@@ -251,12 +256,14 @@ header {
   color: #848484;
   font-family: "Helvetica Neue", sans-serif;
 }
+
 .main_social_box_icons {
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
 }
+
 .main_social_icon {
   border-radius: 50%;
   cursor: pointer;
@@ -268,6 +275,7 @@ header {
 .icon_twitter {
   padding: 9px;
 }
+
 .icon_facebook {
   padding: 9px 13px;
 }
@@ -324,6 +332,51 @@ header {
   color: #2ecc71;
 }
 
+@media screen and (max-width: 1468px) {
+  .main_features_two {
+    margin-left: 10px;
+  }
+  .main_features_two_box_text {
+    margin-left: 0px;
+  }
+
+  .main_section_two_video {
+    margin-right: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1064px) {
+  .main_features_boxs p {
+    padding: 30px 50px;
+  }
+
+  .main_features_two {
+    margin-left: 0px;
+  }
+
+  .main_features_two {
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main_features_two_box_text {
+    margin-top: 30px;
+    padding: 10px;
+  }
+
+  .main_section_two_video {
+    padding-bottom: 46%;
+    margin-left: 0px;
+  }
+
+  .main_section_two_video iframe {
+    margin-left: 0px;
+  }
+}
+
 @media screen and (max-width: 960px) {
   .header-logo_title {
     margin-left: 20px;
@@ -338,21 +391,7 @@ header {
   }
 
   .main_features_boxs p {
-    padding: 30px;
-  }
-
-  .main_features_two {
-    text-align: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-left: 0px;
-  }
-
-  .main_features_two_box_text {
-    margin-left: 0px;
-    margin-top: 30px;
-    padding: 5px;
+    padding: 10px;
   }
 
   .main_features_three_text p {
@@ -365,12 +404,25 @@ header {
   }
 
   .main_section_two_video {
-    padding-bottom: 56.26%;
+    padding-bottom: 46%;
+    padding-right: 0px;
   }
 
   .main_section_two_video iframe {
-    margin-left: 0px;
+    display: block;
     margin-top: 30px;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .main_features_boxs p {
+    padding: 30px 150px;
+  }
+
+  .main_section_two_video {
+    padding-bottom: 65%;
   }
 }
 
@@ -378,5 +430,35 @@ header {
   .footer_items {
     display: block;
     text-align: center;
+  }
+
+  .main_section_two_video {
+    padding-bottom: 65%;
+  }
+
+  .main_section_two_video iframe {
+    min-width: 400px;
+    min-height: 307px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .main_features_boxs p {
+    padding: 30px 50px;
+  }
+
+  .main_features_form_email {
+    margin-right: 8px;
+    margin-left: 5px;
+  }
+
+  .main_section_two_video {
+    padding-top: 20%;
+    padding-bottom: 90%;
+  }
+
+  .main_section_two_video iframe {
+    min-width: 340px;
+    min-height: 307px;
   }
 }
