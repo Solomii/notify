@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+body {
+  max-width: 1602px;
+  margin: 0 auto;
+}
+header {
+  background: url(../img/iphone-card-header-2.png) center/cover;
+  background-repeat: no-repeat;
+}
+
+.header-logo_title {
+  margin-left: 200px;
+}
+
+.header_logo {
+  margin-top: 150px;
+}
+
+.header_link {
+  margin-bottom: 350px;
+}
+
+.header_menu {
+  display: flex;
+  margin-top: 40px;
+}
+
+.header_icon_url {
+  border-radius: 50%;
+  cursor: pointer;
+  color: #f4f4f4;
+  background-color: #030303;
+  margin-right: 14px;
+}
+
+.header_icon_url:hover {
+  background-color: #2dcb71;
+}
+
+.header_icon_apple {
+  padding: 23px 20px;
+}
+
+.header_icon_android {
+  padding: 23px 21px;
+}
+
+.header_icon_window {
+  padding: 23px 18px;
+}
+
+.header_title {
+  max-width: 469px;
+  font-size: 24px;
+  line-height: 36px;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+/* main_section_one */
+.main_features_one {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+}
+
+.main_features_boxs {
+  text-align: center;
+}
+
+.main_features_boxs h3 {
+  margin-top: 25px;
+  font-size: 22px;
+  line-height: 18px;
+  color: #222222;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+}
+
+.main_features_boxs p {
+  padding: 30px 130px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #848484;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+/* main_section_two */
+.main_section_two {
+  background-color: #e3e3e3;
+  display: flex;
+  /* justify-content: space-between; */
+}
+.main_features_two {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 65px;
+}
+
+.main_features_two_box_text {
+  margin-left: 50px;
+  margin-top: 50px;
+  /* padding-right: 400px; */
+  max-width: 545px;
+  max-height: 265px;
+}
+
+.main_features_two_box_text h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  line-height: 18px;
+  color: #222222;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+}
+
+.main_features_two_box_text p {
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #848484;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+/* main button */
+
+.main_features_submit_email {
+  margin: 0 auto;
+}
+
+.main_features_submit_conteiner {
+  display: inline-block;
+  border-radius: 15px;
+  background-color: #ffffff;
+  border: 1px solid #c8c8c8;
+}
+
+.main_features_form_email {
+  border: none;
+  outline: none;
+  margin-right: 85px;
+  margin-left: 20px;
+}
+
+.main_features_form_button {
+  font-size: 22px;
+  line-height: 18px;
+  padding: 15px 35px;
+  border-radius: 15px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  outline: none;
+  background-color: #2ecc71;
+  border: none;
+}
+
+.main_features_form_button:hover {
+  background-color: #848484;
+}
+
+/* Video */
+
+.main_section_two_video {
+  position: relative;
+  padding-bottom: 36%;
+  height: 0;
+  overflow: hidden;
+}
+.main_section_two_video iframe {
+  min-width: 500px;
+  min-height: 307px;
+  margin: auto;
+  margin-top: 60px;
+  border-radius: 8px;
+  margin-left: 150px;
+}
+
+/* Photo */
+.main_features_three {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main_features_three_text {
+  margin-top: 46px;
+}
+
+.main_features_three_text p {
+  padding: 5px 350px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #848484;
+  font-style: italic;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.main_features_three_text h3 {
+  font-size: 18px;
+  line-height: 20px;
+  color: #2e2e2e;
+  font-weight: 700;
+  font-family: "Raleway" sans-serif;
+  padding: 20px;
+}
+
+.main_features_box_photos {
+  display: flex;
+  justify-content: center;
+}
+
+.main_features_photo {
+  cursor: pointer;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 2px;
+}
+
+.main_features_photo:hover {
+  opacity: 0.4;
+}
+
+.main_features_icons {
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.main_features_icons h3 {
+  margin-bottom: 25px;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+}
+
+.main_features_icons p {
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #848484;
+  font-family: "Helvetica Neue", sans-serif;
+}
+.main_social_box_icons {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.main_social_icon {
+  border-radius: 50%;
+  cursor: pointer;
+  color: #fff;
+  background-color: #848484;
+  margin-right: 10px;
+}
+
+.icon_twitter {
+  padding: 9px;
+}
+.icon_facebook {
+  padding: 9px 13px;
+}
+
+.icon_pinterest {
+  padding: 9.5px 12px;
+}
+
+.icon_google {
+  padding: 10px 6px;
+}
+
+.icon_linkedin {
+  padding: 10px;
+}
+
+.icon_youtube {
+  padding: 9px 12px;
+}
+
+.main_social_icon:hover {
+  background-color: #2ecc71;
+}
+
+/* Footer */
+.footer_container {
+  display: flex;
+  justify-content: center;
+  background-color: #e3e3e3;
+}
+
+.footer_items {
+  display: flex;
+  list-style: none;
+  margin-top: 50px;
+  margin-bottom: 55px;
+}
+
+.footer_li {
+  text-decoration: none;
+}
+
+.footer_navigation_link {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 26px;
+  color: #848484;
+  font-family: "Helvetica Neue", sans-serif;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.footer_navigation_link:hover {
+  color: #2ecc71;
+}
+
+@media screen and (max-width: 960px) {
+  .header-logo_title {
+    margin-left: 20px;
+    padding: 10px;
+  }
+
+  /* Editable */
+  .main_features_one {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .main_features_boxs p {
+    padding: 30px;
+  }
+
+  .main_features_two {
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+  }
+
+  .main_features_two_box_text {
+    margin-left: 0px;
+    margin-top: 30px;
+    padding: 5px;
+  }
+
+  .main_features_three_text p {
+    padding: 5px 20px;
+  }
+
+  .main_features_form_email {
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+
+  .main_section_two_video {
+    padding-bottom: 56.26%;
+  }
+
+  .main_section_two_video iframe {
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .footer_items {
+    display: block;
+    text-align: center;
+  }
+}
